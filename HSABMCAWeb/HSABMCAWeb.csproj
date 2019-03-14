@@ -121,7 +121,6 @@
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
-    <Content Include="Global.asax" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
@@ -130,7 +129,252 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="Bundle.config" />
+    <Content Include="Images\info-blue.png" />
+    <Content Include="Images\Thumbs.db" />
+    <Content Include="dsWeb.xsc">
+      <DependentUpon>dsWeb.xsd</DependentUpon>
+    </Content>
+    <None Include="dsWeb.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsWeb.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="dsWeb.xss">
+      <DependentUpon>dsWeb.xsd</DependentUpon>
+    </Content>
+    <None Include="packages.config" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
+    <Content Include="Global.asax" />
+    <Content Include="Images\back-120x120.png" />
+    <Content Include="Images\back-36x36.png" />
+    <Content Include="Images\back-80x80.png" />
+    <Content Include="Images\back.png" />
+    <Content Include="Images\Best-Interests-decision-making-prompts-1024x104.png" />
+    <Content Include="Images\Best-Interests-decision-making-prompts-120x120.png" />
+    <Content Include="Images\Best-Interests-decision-making-prompts-1210x138.png" />
+    <Content Include="Images\Best-Interests-decision-making-prompts-150x138.png" />
+    <Content Include="Images\Best-Interests-decision-making-prompts-180x138.png" />
+    <Content Include="Images\Best-Interests-decision-making-prompts-260x138.png" />
+    <Content Include="Images\Best-Interests-decision-making-prompts-272x138.png" />
+    <Content Include="Images\Best-Interests-decision-making-prompts-300x30.png" />
+    <Content Include="Images\Best-Interests-decision-making-prompts-36x36.png" />
+    <Content Include="Images\Best-Interests-decision-making-prompts-450x138.png" />
+    <Content Include="Images\Best-Interests-decision-making-prompts-450x46.png" />
+    <Content Include="Images\Best-Interests-decision-making-prompts-495x138.png" />
+    <Content Include="Images\Best-Interests-decision-making-prompts-705x72.png" />
+    <Content Include="Images\Best-Interests-decision-making-prompts-710x138.png" />
+    <Content Include="Images\Best-Interests-decision-making-prompts-768x78.png" />
+    <Content Include="Images\Best-Interests-decision-making-prompts-845x138.png" />
+    <Content Include="Images\Best-Interests-decision-making-prompts-info-1030x105.png" />
+    <Content Include="Images\Best-Interests-decision-making-prompts-info-120x120.png" />
+    <Content Include="Images\Best-Interests-decision-making-prompts-info-1210x138.png" />
+    <Content Include="Images\Best-Interests-decision-making-prompts-info-180x138.png" />
+    <Content Include="Images\Best-Interests-decision-making-prompts-info-260x138.png" />
+    <Content Include="Images\Best-Interests-decision-making-prompts-info-272x138.png" />
+    <Content Include="Images\Best-Interests-decision-making-prompts-info-300x30.png" />
+    <Content Include="Images\Best-Interests-decision-making-prompts-info-36x36.png" />
+    <Content Include="Images\Best-Interests-decision-making-prompts-info-450x138.png" />
+    <Content Include="Images\Best-Interests-decision-making-prompts-info-450x46.png" />
+    <Content Include="Images\Best-Interests-decision-making-prompts-info-495x138.png" />
+    <Content Include="Images\Best-Interests-decision-making-prompts-info-705x72.png" />
+    <Content Include="Images\Best-Interests-decision-making-prompts-info-710x138.png" />
+    <Content Include="Images\Best-Interests-decision-making-prompts-info-768x78.png" />
+    <Content Include="Images\Best-Interests-decision-making-prompts-info-80x80.png" />
+    <Content Include="Images\Best-Interests-decision-making-prompts-info-845x138.png" />
+    <Content Include="Images\Best-Interests-decision-making-prompts-info.png" />
+    <Content Include="Images\Best-Interests-decision-making-prompts.png" />
+    <Content Include="Images\BigCross-50x50.png" />
+    <Content Include="Images\BigCross.png" />
+    <Content Include="Images\BigCrossNo-120x107.png" />
+    <Content Include="Images\BigCrossNo-150x107.png" />
+    <Content Include="Images\BigCrossNo-180x107.png" />
+    <Content Include="Images\BigCrossNo-260x107.png" />
+    <Content Include="Images\BigCrossNo-272x107.png" />
+    <Content Include="Images\BigCrossNo-300x107.png" />
+    <Content Include="Images\BigCrossNo-36x36.png" />
+    <Content Include="Images\BigCrossNo-e1551442001710.png" />
+    <Content Include="Images\BigCrossNo.png" />
+    <Content Include="Images\BigTick-61x50.png" />
+    <Content Include="Images\BigTick.png" />
+    <Content Include="Images\BigTickYes-120x105.png" />
+    <Content Include="Images\BigTickYes-180x105.png" />
+    <Content Include="Images\BigTickYes-260x105.png" />
+    <Content Include="Images\BigTickYes-272x105.png" />
+    <Content Include="Images\BigTickYes-36x36.png" />
+    <Content Include="Images\BigTickYes-80x80.png" />
+    <Content Include="Images\BigTickYes-e1551441949436.png" />
+    <Content Include="Images\BigTickYes.png" />
+    <Content Include="Images\Blank.png" />
+    <Content Include="Images\DOLS-application-prompts-1024x102.png" />
+    <Content Include="Images\DOLS-application-prompts-120x120.png" />
+    <Content Include="Images\DOLS-application-prompts-1210x135.png" />
+    <Content Include="Images\DOLS-application-prompts-150x135.png" />
+    <Content Include="Images\DOLS-application-prompts-180x135.png" />
+    <Content Include="Images\DOLS-application-prompts-260x135.png" />
+    <Content Include="Images\DOLS-application-prompts-272x135.png" />
+    <Content Include="Images\DOLS-application-prompts-300x30.png" />
+    <Content Include="Images\DOLS-application-prompts-36x36.png" />
+    <Content Include="Images\DOLS-application-prompts-450x135.png" />
+    <Content Include="Images\DOLS-application-prompts-450x45.png" />
+    <Content Include="Images\DOLS-application-prompts-495x135.png" />
+    <Content Include="Images\DOLS-application-prompts-705x70.png" />
+    <Content Include="Images\DOLS-application-prompts-710x135.png" />
+    <Content Include="Images\DOLS-application-prompts-768x76.png" />
+    <Content Include="Images\DOLS-application-prompts-845x135.png" />
+    <Content Include="Images\DOLS-application-prompts-info-1030x102.png" />
+    <Content Include="Images\DOLS-application-prompts-info-120x120.png" />
+    <Content Include="Images\DOLS-application-prompts-info-1210x135.png" />
+    <Content Include="Images\DOLS-application-prompts-info-180x135.png" />
+    <Content Include="Images\DOLS-application-prompts-info-260x135.png" />
+    <Content Include="Images\DOLS-application-prompts-info-272x135.png" />
+    <Content Include="Images\DOLS-application-prompts-info-300x30.png" />
+    <Content Include="Images\DOLS-application-prompts-info-36x36.png" />
+    <Content Include="Images\DOLS-application-prompts-info-450x135.png" />
+    <Content Include="Images\DOLS-application-prompts-info-450x45.png" />
+    <Content Include="Images\DOLS-application-prompts-info-495x135.png" />
+    <Content Include="Images\DOLS-application-prompts-info-705x70.png" />
+    <Content Include="Images\DOLS-application-prompts-info-710x135.png" />
+    <Content Include="Images\DOLS-application-prompts-info-768x76.png" />
+    <Content Include="Images\DOLS-application-prompts-info-80x80.png" />
+    <Content Include="Images\DOLS-application-prompts-info-845x135.png" />
+    <Content Include="Images\DOLS-application-prompts-info.png" />
+    <Content Include="Images\DOLS-application-prompts.png" />
+    <Content Include="Images\hbl-36x36.png" />
+    <Content Include="Images\hbl-80x44.png" />
+    <Content Include="Images\hbl.png" />
+    <Content Include="Images\home-120x120.png" />
+    <Content Include="Images\home-180x180.png" />
+    <Content Include="Images\home-260x185.png" />
+    <Content Include="Images\home-272x182.png" />
+    <Content Include="Images\home-300x300.png" />
+    <Content Include="Images\home-36x36.png" />
+    <Content Include="Images\home-450x450.png" />
+    <Content Include="Images\home-495x400.png" />
+    <Content Include="Images\home-512x321.png" />
+    <Content Include="Images\home-512x375.png" />
+    <Content Include="Images\home-512x423.png" />
+    <Content Include="Images\home-512x430.png" />
+    <Content Include="Images\home-80x80.png" />
+    <Content Include="Images\home.png" />
+    <Content Include="Images\HSAB-120x44.png" />
+    <Content Include="Images\HSAB-180x44.png" />
+    <Content Include="Images\HSAB-260x44.png" />
+    <Content Include="Images\HSAB-272x44.png" />
+    <Content Include="Images\HSAB-300x36.png" />
+    <Content Include="Images\HSAB-36x36.png" />
+    <Content Include="Images\HSAB-80x44.png" />
+    <Content Include="Images\HSAB.png" />
+    <Content Include="Images\IMCA-referral-prompts-1024x102.png" />
+    <Content Include="Images\IMCA-referral-prompts-120x120.png" />
+    <Content Include="Images\IMCA-referral-prompts-1210x136.png" />
+    <Content Include="Images\IMCA-referral-prompts-150x136.png" />
+    <Content Include="Images\IMCA-referral-prompts-180x136.png" />
+    <Content Include="Images\IMCA-referral-prompts-260x136.png" />
+    <Content Include="Images\IMCA-referral-prompts-272x136.png" />
+    <Content Include="Images\IMCA-referral-prompts-300x30.png" />
+    <Content Include="Images\IMCA-referral-prompts-36x36.png" />
+    <Content Include="Images\IMCA-referral-prompts-450x136.png" />
+    <Content Include="Images\IMCA-referral-prompts-450x45.png" />
+    <Content Include="Images\IMCA-referral-prompts-495x136.png" />
+    <Content Include="Images\IMCA-referral-prompts-705x71.png" />
+    <Content Include="Images\IMCA-referral-prompts-710x136.png" />
+    <Content Include="Images\IMCA-referral-prompts-768x77.png" />
+    <Content Include="Images\IMCA-referral-prompts-845x136.png" />
+    <Content Include="Images\IMCA-referral-prompts-info-1030x103.png" />
+    <Content Include="Images\IMCA-referral-prompts-info-120x120.png" />
+    <Content Include="Images\IMCA-referral-prompts-info-1210x136.png" />
+    <Content Include="Images\IMCA-referral-prompts-info-180x136.png" />
+    <Content Include="Images\IMCA-referral-prompts-info-260x136.png" />
+    <Content Include="Images\IMCA-referral-prompts-info-272x136.png" />
+    <Content Include="Images\IMCA-referral-prompts-info-300x30.png" />
+    <Content Include="Images\IMCA-referral-prompts-info-36x36.png" />
+    <Content Include="Images\IMCA-referral-prompts-info-450x136.png" />
+    <Content Include="Images\IMCA-referral-prompts-info-450x45.png" />
+    <Content Include="Images\IMCA-referral-prompts-info-495x136.png" />
+    <Content Include="Images\IMCA-referral-prompts-info-705x71.png" />
+    <Content Include="Images\IMCA-referral-prompts-info-710x136.png" />
+    <Content Include="Images\IMCA-referral-prompts-info-768x77.png" />
+    <Content Include="Images\IMCA-referral-prompts-info-80x80.png" />
+    <Content Include="Images\IMCA-referral-prompts-info-845x136.png" />
+    <Content Include="Images\IMCA-referral-prompts-info.png" />
+    <Content Include="Images\IMCA-referral-prompts.png" />
+    <Content Include="Images\logo-120x57.png" />
+    <Content Include="Images\logo-36x36.png" />
+    <Content Include="Images\logo-80x57.png" />
+    <Content Include="Images\logo.png" />
+    <Content Include="Images\Mental-Capacity-decision-making-prompts-1024x95.png" />
+    <Content Include="Images\Mental-Capacity-decision-making-prompts-150x126.png" />
+    <Content Include="Images\Mental-Capacity-decision-making-prompts-150x14.png" />
+    <Content Include="Images\Mental-Capacity-decision-making-prompts-272x126.png" />
+    <Content Include="Images\Mental-Capacity-decision-making-prompts-300x28.png" />
+    <Content Include="Images\Mental-Capacity-decision-making-prompts-768x71.png" />
+    <Content Include="Images\Mental-Capacity-decision-making-prompts-info-1030x189.png" />
+    <Content Include="Images\Mental-Capacity-decision-making-prompts-info-120x120.png" />
+    <Content Include="Images\Mental-Capacity-decision-making-prompts-info-1210x250.png" />
+    <Content Include="Images\Mental-Capacity-decision-making-prompts-info-180x180.png" />
+    <Content Include="Images\Mental-Capacity-decision-making-prompts-info-260x185.png" />
+    <Content Include="Images\Mental-Capacity-decision-making-prompts-info-272x182.png" />
+    <Content Include="Images\Mental-Capacity-decision-making-prompts-info-300x55.png" />
+    <Content Include="Images\Mental-Capacity-decision-making-prompts-info-36x36.png" />
+    <Content Include="Images\Mental-Capacity-decision-making-prompts-info-450x250.png" />
+    <Content Include="Images\Mental-Capacity-decision-making-prompts-info-450x83.png" />
+    <Content Include="Images\Mental-Capacity-decision-making-prompts-info-495x250.png" />
+    <Content Include="Images\Mental-Capacity-decision-making-prompts-info-705x130.png" />
+    <Content Include="Images\Mental-Capacity-decision-making-prompts-info-710x250.png" />
+    <Content Include="Images\Mental-Capacity-decision-making-prompts-info-768x141.png" />
+    <Content Include="Images\Mental-Capacity-decision-making-prompts-info-80x80.png" />
+    <Content Include="Images\Mental-Capacity-decision-making-prompts-info-845x250.png" />
+    <Content Include="Images\Mental-Capacity-decision-making-prompts-info-e1551780192916-1030x95.png" />
+    <Content Include="Images\Mental-Capacity-decision-making-prompts-info-e1551780192916-120x120.png" />
+    <Content Include="Images\Mental-Capacity-decision-making-prompts-info-e1551780192916-1210x125.png" />
+    <Content Include="Images\Mental-Capacity-decision-making-prompts-info-e1551780192916-180x125.png" />
+    <Content Include="Images\Mental-Capacity-decision-making-prompts-info-e1551780192916-260x125.png" />
+    <Content Include="Images\Mental-Capacity-decision-making-prompts-info-e1551780192916-272x125.png" />
+    <Content Include="Images\Mental-Capacity-decision-making-prompts-info-e1551780192916-300x28.png" />
+    <Content Include="Images\Mental-Capacity-decision-making-prompts-info-e1551780192916-36x36.png" />
+    <Content Include="Images\Mental-Capacity-decision-making-prompts-info-e1551780192916-450x125.png" />
+    <Content Include="Images\Mental-Capacity-decision-making-prompts-info-e1551780192916-450x41.png" />
+    <Content Include="Images\Mental-Capacity-decision-making-prompts-info-e1551780192916-495x125.png" />
+    <Content Include="Images\Mental-Capacity-decision-making-prompts-info-e1551780192916-705x65.png" />
+    <Content Include="Images\Mental-Capacity-decision-making-prompts-info-e1551780192916-710x125.png" />
+    <Content Include="Images\Mental-Capacity-decision-making-prompts-info-e1551780192916-768x71.png" />
+    <Content Include="Images\Mental-Capacity-decision-making-prompts-info-e1551780192916-80x80.png" />
+    <Content Include="Images\Mental-Capacity-decision-making-prompts-info-e1551780192916-845x125.png" />
+    <Content Include="Images\Mental-Capacity-decision-making-prompts-info-e1551780192916.png" />
+    <Content Include="Images\Mental-Capacity-decision-making-prompts-info.png" />
+    <Content Include="Images\Mental-Capacity-decision-making-prompts.png" />
+    <Content Include="Images\next-120x120.png" />
+    <Content Include="Images\next-36x36.png" />
+    <Content Include="Images\next-80x80.png" />
+    <Content Include="Images\next.png" />
+    <Content Include="Images\people-120x120.png" />
+    <Content Include="Images\people-180x180.png" />
+    <Content Include="Images\people-260x185.png" />
+    <Content Include="Images\people-272x182.png" />
+    <Content Include="Images\people-300x104.png" />
+    <Content Include="Images\people-300x79.png" />
+    <Content Include="Images\people-36x36.png" />
+    <Content Include="Images\people-450x156.png" />
+    <Content Include="Images\people-450x247.png" />
+    <Content Include="Images\people-495x247.png" />
+    <Content Include="Images\people-705x244.png" />
+    <Content Include="Images\people-710x247.png" />
+    <Content Include="Images\people-80x80.png" />
+    <Content Include="Images\people-e1551361187597-120x120.png" />
+    <Content Include="Images\people-e1551361187597-180x180.png" />
+    <Content Include="Images\people-e1551361187597-260x185.png" />
+    <Content Include="Images\people-e1551361187597-272x182.png" />
+    <Content Include="Images\people-e1551361187597-300x104.png" />
+    <Content Include="Images\people-e1551361187597-36x36.png" />
+    <Content Include="Images\people-e1551361187597-450x156.png" />
+    <Content Include="Images\people-e1551361187597-450x247.png" />
+    <Content Include="Images\people-e1551361187597-495x247.png" />
+    <Content Include="Images\people-e1551361187597-705x244.png" />
+    <Content Include="Images\people-e1551361187597-710x247.png" />
+    <Content Include="Images\people-e1551361187597-80x80.png" />
+    <Content Include="Images\people-e1551361187597.png" />
+    <Content Include="Images\people.png" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
@@ -162,7 +406,6 @@
     <Content Include="Site.Master" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
-    <Content Include="Bundle.config" />
     <Content Include="Site.Mobile.Master" />
   </ItemGroup>
   <ItemGroup>
@@ -189,6 +432,11 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="dsWeb.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsWeb.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -202,12 +450,14 @@
     </Compile>
     <Compile Include="Site.Mobile.Master.cs">
       <DependentUpon>Site.Mobile.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Site.Mobile.Master.designer.cs">
       <DependentUpon>Site.Mobile.Master</DependentUpon>
     </Compile>
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="ViewSwitcher.ascx.designer.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
@@ -217,7 +467,6 @@
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.3.1.min.map" />
     <None Include="Web.Debug.config">

@@ -55,7 +55,7 @@ namespace HSABMCAWeb {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btn01_InfoMCD;
+        protected global::System.Web.UI.WebControls.LinkButton btn01_InfoMCD;
         
         /// <summary>
         /// tr01_BID control.
@@ -82,7 +82,7 @@ namespace HSABMCAWeb {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ImageButton btn01_InfoBID;
+        protected global::System.Web.UI.WebControls.LinkButton btn01_InfoBID;
         
         /// <summary>
         /// tr01_IMCA control.
@@ -109,7 +109,7 @@ namespace HSABMCAWeb {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ImageButton btn01_InfoIMCA;
+        protected global::System.Web.UI.WebControls.LinkButton btn01_InfoIMCA;
         
         /// <summary>
         /// tr01_DOLS control.
@@ -136,7 +136,7 @@ namespace HSABMCAWeb {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ImageButton btn01_InfoDOLS;
+        protected global::System.Web.UI.WebControls.LinkButton btn01_InfoDOLS;
         
         /// <summary>
         /// pnl02_Page control.
@@ -193,6 +193,15 @@ namespace HSABMCAWeb {
         protected global::System.Web.UI.WebControls.ImageButton img02_Yes;
         
         /// <summary>
+        /// lnk02_Yes control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton lnk02_Yes;
+        
+        /// <summary>
         /// tr02_No control.
         /// </summary>
         /// <remarks>
@@ -211,6 +220,15 @@ namespace HSABMCAWeb {
         protected global::System.Web.UI.WebControls.ImageButton img02_No;
         
         /// <summary>
+        /// lnk02_No control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton lnk02_No;
+        
+        /// <summary>
         /// pnl99_Footer control.
         /// </summary>
         /// <remarks>
@@ -220,15 +238,6 @@ namespace HSABMCAWeb {
         protected global::System.Web.UI.WebControls.Panel pnl99_Footer;
         
         /// <summary>
-        /// img99_Back control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.ImageButton img99_Back;
-        
-        /// <summary>
         /// img99_Next control.
         /// </summary>
         /// <remarks>
@@ -236,6 +245,15 @@ namespace HSABMCAWeb {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.ImageButton img99_Next;
+        
+        /// <summary>
+        /// img99_Back control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ImageButton img99_Back;
         
         /// <summary>
         /// img99_Home control.

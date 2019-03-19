@@ -281,7 +281,7 @@ namespace HSABMCAWeb {
             
             private global::System.Data.DataColumn columnPage_ID;
             
-            private global::System.Data.DataColumn columnDisplayText;
+            private global::System.Data.DataColumn columnDisplayHTML;
             
             private global::System.Data.DataColumn columnYesPage_ID;
             
@@ -336,9 +336,9 @@ namespace HSABMCAWeb {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public global::System.Data.DataColumn DisplayTextColumn {
+            public global::System.Data.DataColumn DisplayHTMLColumn {
                 get {
-                    return this.columnDisplayText;
+                    return this.columnDisplayHTML;
                 }
             }
             
@@ -419,11 +419,11 @@ namespace HSABMCAWeb {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public PagesRow AddPagesRow(string Page_ID, string DisplayText, string YesPage_ID, string NoPage_ID, string NextPage_ID, string BackPage_ID, string HeaderType) {
+            public PagesRow AddPagesRow(string Page_ID, string DisplayHTML, string YesPage_ID, string NoPage_ID, string NextPage_ID, string BackPage_ID, string HeaderType) {
                 PagesRow rowPagesRow = ((PagesRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         Page_ID,
-                        DisplayText,
+                        DisplayHTML,
                         YesPage_ID,
                         NoPage_ID,
                         NextPage_ID,
@@ -459,7 +459,7 @@ namespace HSABMCAWeb {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             internal void InitVars() {
                 this.columnPage_ID = base.Columns["Page_ID"];
-                this.columnDisplayText = base.Columns["DisplayText"];
+                this.columnDisplayHTML = base.Columns["DisplayHTML"];
                 this.columnYesPage_ID = base.Columns["YesPage_ID"];
                 this.columnNoPage_ID = base.Columns["NoPage_ID"];
                 this.columnNextPage_ID = base.Columns["NextPage_ID"];
@@ -472,8 +472,8 @@ namespace HSABMCAWeb {
             private void InitClass() {
                 this.columnPage_ID = new global::System.Data.DataColumn("Page_ID", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnPage_ID);
-                this.columnDisplayText = new global::System.Data.DataColumn("DisplayText", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnDisplayText);
+                this.columnDisplayHTML = new global::System.Data.DataColumn("DisplayHTML", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDisplayHTML);
                 this.columnYesPage_ID = new global::System.Data.DataColumn("YesPage_ID", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnYesPage_ID);
                 this.columnNoPage_ID = new global::System.Data.DataColumn("NoPage_ID", typeof(string), null, global::System.Data.MappingType.Element);
@@ -489,7 +489,7 @@ namespace HSABMCAWeb {
                 this.columnPage_ID.AllowDBNull = false;
                 this.columnPage_ID.Unique = true;
                 this.columnPage_ID.MaxLength = 50;
-                this.columnDisplayText.MaxLength = 2147483647;
+                this.columnDisplayHTML.MaxLength = 2147483647;
                 this.columnYesPage_ID.MaxLength = 50;
                 this.columnNoPage_ID.MaxLength = 50;
                 this.columnNextPage_ID.MaxLength = 50;
@@ -648,17 +648,17 @@ namespace HSABMCAWeb {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public string DisplayText {
+            public string DisplayHTML {
                 get {
                     try {
-                        return ((string)(this[this.tablePages.DisplayTextColumn]));
+                        return ((string)(this[this.tablePages.DisplayHTMLColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'DisplayText\' in table \'Pages\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'DisplayHTML\' in table \'Pages\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tablePages.DisplayTextColumn] = value;
+                    this[this.tablePages.DisplayHTMLColumn] = value;
                 }
             }
             
@@ -744,14 +744,14 @@ namespace HSABMCAWeb {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public bool IsDisplayTextNull() {
-                return this.IsNull(this.tablePages.DisplayTextColumn);
+            public bool IsDisplayHTMLNull() {
+                return this.IsNull(this.tablePages.DisplayHTMLColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public void SetDisplayTextNull() {
-                this[this.tablePages.DisplayTextColumn] = global::System.Convert.DBNull;
+            public void SetDisplayHTMLNull() {
+                this[this.tablePages.DisplayHTMLColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -975,7 +975,7 @@ namespace HSABMCAWeb.dsWebTableAdapters {
             tableMapping.SourceTable = "Table";
             tableMapping.DataSetTable = "Pages";
             tableMapping.ColumnMappings.Add("Page_ID", "Page_ID");
-            tableMapping.ColumnMappings.Add("DisplayText", "DisplayText");
+            tableMapping.ColumnMappings.Add("DisplayHTML", "DisplayHTML");
             tableMapping.ColumnMappings.Add("YesPage_ID", "YesPage_ID");
             tableMapping.ColumnMappings.Add("NoPage_ID", "NoPage_ID");
             tableMapping.ColumnMappings.Add("NextPage_ID", "NextPage_ID");
@@ -989,12 +989,12 @@ namespace HSABMCAWeb.dsWebTableAdapters {
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Page_ID", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Page_ID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = "INSERT INTO [Pages] ([Page_ID], [DisplayText], [YesPage_ID], [NoPage_ID], [NextPa" +
-                "ge_ID], [BackPage_ID], [HeaderType]) VALUES (@Page_ID, @DisplayText, @YesPage_ID" +
+            this._adapter.InsertCommand.CommandText = "INSERT INTO [Pages] ([Page_ID], [DisplayHTML], [YesPage_ID], [NoPage_ID], [NextPa" +
+                "ge_ID], [BackPage_ID], [HeaderType]) VALUES (@Page_ID, @DisplayHTML, @YesPage_ID" +
                 ", @NoPage_ID, @NextPage_ID, @BackPage_ID, @HeaderType)";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Page_ID", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Page_ID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@DisplayText", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "DisplayText", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@DisplayHTML", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "DisplayHTML", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@YesPage_ID", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "YesPage_ID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@NoPage_ID", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "NoPage_ID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@NextPage_ID", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "NextPage_ID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -1002,13 +1002,13 @@ namespace HSABMCAWeb.dsWebTableAdapters {
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@HeaderType", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "HeaderType", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = "UPDATE [Pages] SET [Page_ID] = @Page_ID, [DisplayText] = @DisplayText, [YesPage_I" +
+            this._adapter.UpdateCommand.CommandText = "UPDATE [Pages] SET [Page_ID] = @Page_ID, [DisplayHTML] = @DisplayHTML, [YesPage_I" +
                 "D] = @YesPage_ID, [NoPage_ID] = @NoPage_ID, [NextPage_ID] = @NextPage_ID, [BackP" +
                 "age_ID] = @BackPage_ID, [HeaderType] = @HeaderType WHERE (([Page_ID] = @Original" +
                 "_Page_ID))";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Page_ID", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Page_ID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@DisplayText", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "DisplayText", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@DisplayHTML", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "DisplayHTML", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@YesPage_ID", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "YesPage_ID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@NoPage_ID", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "NoPage_ID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@NextPage_ID", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "NextPage_ID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -1030,7 +1030,7 @@ namespace HSABMCAWeb.dsWebTableAdapters {
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT Page_ID, DisplayText, YesPage_ID, NoPage_ID, NextPage_ID, BackPage_ID, Hea" +
+            this._commandCollection[0].CommandText = "SELECT Page_ID, DisplayHTML, YesPage_ID, NoPage_ID, NextPage_ID, BackPage_ID, Hea" +
                 "derType\r\nFROM     Pages\r\nWHERE  (Page_ID = @Page_ID)";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Page_ID", global::System.Data.SqlDbType.VarChar, 50, global::System.Data.ParameterDirection.Input, 0, 0, "Page_ID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -1132,18 +1132,18 @@ namespace HSABMCAWeb.dsWebTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(string Page_ID, string DisplayText, string YesPage_ID, string NoPage_ID, string NextPage_ID, string BackPage_ID, string HeaderType) {
+        public virtual int Insert(string Page_ID, string DisplayHTML, string YesPage_ID, string NoPage_ID, string NextPage_ID, string BackPage_ID, string HeaderType) {
             if ((Page_ID == null)) {
                 throw new global::System.ArgumentNullException("Page_ID");
             }
             else {
                 this.Adapter.InsertCommand.Parameters[0].Value = ((string)(Page_ID));
             }
-            if ((DisplayText == null)) {
+            if ((DisplayHTML == null)) {
                 this.Adapter.InsertCommand.Parameters[1].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[1].Value = ((string)(DisplayText));
+                this.Adapter.InsertCommand.Parameters[1].Value = ((string)(DisplayHTML));
             }
             if ((YesPage_ID == null)) {
                 this.Adapter.InsertCommand.Parameters[2].Value = global::System.DBNull.Value;
@@ -1195,18 +1195,18 @@ namespace HSABMCAWeb.dsWebTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(string Page_ID, string DisplayText, string YesPage_ID, string NoPage_ID, string NextPage_ID, string BackPage_ID, string HeaderType, string Original_Page_ID) {
+        public virtual int Update(string Page_ID, string DisplayHTML, string YesPage_ID, string NoPage_ID, string NextPage_ID, string BackPage_ID, string HeaderType, string Original_Page_ID) {
             if ((Page_ID == null)) {
                 throw new global::System.ArgumentNullException("Page_ID");
             }
             else {
                 this.Adapter.UpdateCommand.Parameters[0].Value = ((string)(Page_ID));
             }
-            if ((DisplayText == null)) {
+            if ((DisplayHTML == null)) {
                 this.Adapter.UpdateCommand.Parameters[1].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[1].Value = ((string)(DisplayText));
+                this.Adapter.UpdateCommand.Parameters[1].Value = ((string)(DisplayHTML));
             }
             if ((YesPage_ID == null)) {
                 this.Adapter.UpdateCommand.Parameters[2].Value = global::System.DBNull.Value;
@@ -1264,8 +1264,8 @@ namespace HSABMCAWeb.dsWebTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(string DisplayText, string YesPage_ID, string NoPage_ID, string NextPage_ID, string BackPage_ID, string HeaderType, string Original_Page_ID) {
-            return this.Update(Original_Page_ID, DisplayText, YesPage_ID, NoPage_ID, NextPage_ID, BackPage_ID, HeaderType, Original_Page_ID);
+        public virtual int Update(string DisplayHTML, string YesPage_ID, string NoPage_ID, string NextPage_ID, string BackPage_ID, string HeaderType, string Original_Page_ID) {
+            return this.Update(Original_Page_ID, DisplayHTML, YesPage_ID, NoPage_ID, NextPage_ID, BackPage_ID, HeaderType, Original_Page_ID);
         }
     }
     

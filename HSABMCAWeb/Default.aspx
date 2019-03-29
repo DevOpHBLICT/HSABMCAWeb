@@ -1,47 +1,11 @@
-﻿<%@ Page Title="Home Page" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="HSABMCAWeb._Default" %>
+﻿<%@ Page Title="MCA Prompts" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="HSABMCAWeb._Default" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
+   
     <asp:Image ID="Image1" runat="server" ImageUrl="~/Images/people-300x79.png" />
     <div >
         <h2>
-            <asp:Table runat="server" id="tbl01_Head">
-                <asp:TableRow runat="server" ID="tr01_MCD" Height="42"><asp:TableCell>
-                        <asp:Button ID="btn01_MCD" runat="server" Text="Mental Capacity Decision Prompts"  Width="500px" OnClick="btn01_Click" ForeColor="White" BackColor="Red" Height="42"/>
-                 </asp:TableCell>
-                    <asp:TableCell BackColor="White" ForeColor="White" Font-Size="Small" >
-                        <asp:LinkButton runat="server" ID="btn01_InfoMCD" OnClick="btn01_Info_Click" ToolTip="InfoMCD" CssClass="btn btn-info" BorderStyle="Outset" BorderWidth="6" Width="84" Height="42">
-          <span class="glyphicon glyphicon-info-sign"></span> MCD
-                        </asp:LinkButton>
-                    </asp:TableCell>
-
-                </asp:TableRow>
-                <asp:TableRow runat="server" ID="tr01_BID" Height="42"><asp:TableCell>
-                        <asp:Button ID="btn01_BID" runat="server" Text="Best Interests Decision Prompts" Width="500px"  OnClick="btn01_Click" Height="42"/>
-                </asp:TableCell>
-                 <asp:TableCell BackColor="White" ForeColor="White" Font-Size="Small" >
-                <asp:LinkButton runat="server" ID="btn01_InfoBID" OnClick="btn01_Info_Click" ToolTip="InfoBID" CssClass="btn btn-info" BorderStyle="Outset" BorderWidth="6" Width="84" Height="42">
-          <span class="glyphicon glyphicon-info-sign"></span> BID
-                        </asp:LinkButton>
-                    </asp:TableCell>
-           </asp:TableRow>
-                <asp:TableRow runat="server" ID="tr01_IMCA" Height="42"><asp:TableCell>
-                        <asp:Button ID="btn01_IMCA" runat="server" Text="IMCA Referral Prompts" Width="500px" /><br />
-                </asp:TableCell>
-                 <asp:TableCell BackColor="White" ForeColor="White" Font-Size="Small"  Height="42">
-                <asp:LinkButton runat="server" ID="btn01_InfoIMCA" OnClick="btn01_Info_Click" ToolTip="InfoIMCA" CssClass="btn btn-info" BorderStyle="Outset" BorderWidth="6" Width="84" Height="42">
-          <span class="glyphicon glyphicon-info-sign"></span> IMCA
-                        </asp:LinkButton>
-                    </asp:TableCell>
-                 </asp:TableRow>
-                <asp:TableRow runat="server" ID="tr01_DOLS" Height="42"><asp:TableCell  Height="42">
-                        <asp:Button ID="btn01_DOLS" runat="server" Text="DOLS Application Prompts" Width="500px"  Height="42"/><br />
-                </asp:TableCell>
-                   <asp:TableCell BackColor="White" ForeColor="White" Font-Size="Small" >
-                <asp:LinkButton runat="server" ID="btn01_InfoDOLS" OnClick="btn01_Info_Click" ToolTip="InfoDOLS" CssClass="btn btn-info" BorderStyle="Outset" BorderWidth="6" Width="84" Height="42">
-          <span class="glyphicon glyphicon-info-sign"></span> DOLS
-                        </asp:LinkButton>
-                    </asp:TableCell>                  
-          </asp:TableRow></asp:Table>
+            <asp:Table runat="server" ID="tbl01_Header2"></asp:Table>
 </h2>
     </div>
     <asp:Panel runat="server" ID="pnl02_Page">

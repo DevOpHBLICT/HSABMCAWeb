@@ -22,121 +22,13 @@ namespace HSABMCAWeb {
         protected global::System.Web.UI.WebControls.Image Image1;
         
         /// <summary>
-        /// tbl01_Head control.
+        /// tbl01_Header2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Table tbl01_Head;
-        
-        /// <summary>
-        /// tr01_MCD control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TableRow tr01_MCD;
-        
-        /// <summary>
-        /// btn01_MCD control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btn01_MCD;
-        
-        /// <summary>
-        /// btn01_InfoMCD control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton btn01_InfoMCD;
-        
-        /// <summary>
-        /// tr01_BID control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TableRow tr01_BID;
-        
-        /// <summary>
-        /// btn01_BID control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btn01_BID;
-        
-        /// <summary>
-        /// btn01_InfoBID control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton btn01_InfoBID;
-        
-        /// <summary>
-        /// tr01_IMCA control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TableRow tr01_IMCA;
-        
-        /// <summary>
-        /// btn01_IMCA control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btn01_IMCA;
-        
-        /// <summary>
-        /// btn01_InfoIMCA control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton btn01_InfoIMCA;
-        
-        /// <summary>
-        /// tr01_DOLS control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TableRow tr01_DOLS;
-        
-        /// <summary>
-        /// btn01_DOLS control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btn01_DOLS;
-        
-        /// <summary>
-        /// btn01_InfoDOLS control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton btn01_InfoDOLS;
+        protected global::System.Web.UI.WebControls.Table tbl01_Header2;
         
         /// <summary>
         /// pnl02_Page control.

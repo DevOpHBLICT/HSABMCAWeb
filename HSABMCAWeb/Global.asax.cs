@@ -18,4 +18,10 @@ namespace HSABMCAWeb
             BundleConfig.RegisterBundles(BundleTable.Bundles);
         }
     }
+
+    public class GString
+    {
+        public static string UserName = "UserName";
+        public static string UserRole = "UserRole";
+    }
 }

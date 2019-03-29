@@ -13,12 +13,25 @@ namespace HSABMCAWeb
         dsWebTableAdapters.PagesTableAdapter tadPages = new dsWebTableAdapters.PagesTableAdapter();
         dsWeb.PagesDataTable tblPages = new dsWeb.PagesDataTable();
 
-        Button btn;
+        dsWebTableAdapters.HeadersTableAdapter tadHeaders = new dsWebTableAdapters.HeadersTableAdapter();
+        dsWeb.HeadersDataTable tblHeaders = new dsWeb.HeadersDataTable();
+
+        dsWebTableAdapters.PageDetailsTableAdapter tadPageDetails = new dsWebTableAdapters.PageDetailsTableAdapter();
+        dsWeb.PageDetailsDataTable tblPageDetails = new dsWeb.PageDetailsDataTable();
+        string page_id;
 
         protected void Page_Load(object sender, EventArgs e)
         {
             if (IsPostBack)
             {
+                if (Request["__EVENTTARGET"].Equals("btnHeaderClick"))
+                {
+                    page_id = Request["__EVENTARGUMENT"];
+                    if (!page_id.Equals(""))
+                    {
+                        Find_Page(page_id: page_id);
+                    }
+                }
                 return;
             }
             if (Request.QueryString["PageID"] != null)
@@ -27,55 +40,18 @@ namespace HSABMCAWeb
                 Find_Page(page_id: page_id);
                 return;
             }
-            pnl99_Footer.Visible = false;
-            img99_Next.Visible = false;
-            pnl02_Page.Visible = false;
+            Load_Home();
         }
 
-        protected void btn01_Click(object sender, EventArgs e)
-        {
-            btn = (Button)sender;
-            if (!btn.ToolTip.Equals(""))
-            {
-                Find_Page(page_id: btn.ToolTip);
-                return;
-            }
+        //protected void btn01_Info_Click(object sender, EventArgs e)
+        //{
+        //    string tooltip = pnl02_Page.ToolTip;
+        //    LinkButton lbtn = (LinkButton)sender;
+        //    Find_Page(page_id: lbtn.ToolTip);
+        //    img99_Back.Visible = true;
+        //    img99_Back.ToolTip = tooltip;
 
-            tr01_MCD.Visible = false;
-            tr01_BID.Visible = false;
-            tr01_IMCA.Visible = false;
-            tr01_DOLS.Visible = false;
-            pnl99_Footer.Visible = true;
-
-            switch (btn.ID)
-            {
-                case "btn01_MCD":
-                    btn.ToolTip = "Slide01";
-                    Find_Page(page_id: btn.ToolTip);
-                    break;
-                case "btn01_InfoMCD":
-                    tr01_MCD.Visible = true;
-                    break;
-                case "btn01_BID":
-                    btn.ToolTip = "Slide12";
-                    Find_Page(page_id: btn.ToolTip);
-                    break;
-                case "btn01_InfoBID":
-                    tr01_BID.Visible = true;
-                    break;
-            }
-
-        }
-
-        protected void btn01_Info_Click(object sender, EventArgs e)
-        {
-            string tooltip = pnl02_Page.ToolTip;
-            LinkButton lbtn = (LinkButton)sender;
-            Find_Page(page_id: lbtn.ToolTip);
-            img99_Back.Visible = true;
-            img99_Back.ToolTip = tooltip;
-
-        }
+        //}
 
         protected void img02_Yes_Click(object sender, ImageClickEventArgs e)
         {
@@ -107,28 +83,8 @@ namespace HSABMCAWeb
             tadPages.Fill(tblPages, Page_ID: page_id);
             foreach (dsWeb.PagesRow prow in tblPages)
             {
-                switch (prow.HeaderType)
-                {
-                    case "MCD":
-                        Load_Page(prow: prow);
-                        tr01_MCD.Visible = true;
-                        return;
-                    case "BID":
-                        Load_Page(prow: prow);
-                        tr01_BID.Visible = true;
-                        return;
-                    case "IMCA":
-                        Load_Page(prow: prow);
-                        tr01_IMCA.Visible = true;
-                        return;
-                    case "DOLS":
-                        Load_Page(prow: prow);
-                        tr01_DOLS.Visible = true;
-                        return;
-                    default:
-                        Load_Home();
-                        return;
-                }
+                Load_Page(prow: prow);
+                return;
             }
             pnl99_Footer.Visible = false;
             img99_Next.Visible = false;
@@ -141,15 +97,16 @@ namespace HSABMCAWeb
 
         protected void Load_Page(dsWeb.PagesRow prow)
         {
-            tr01_MCD.Visible = false;
-            tr01_BID.Visible = false;
-            tr01_IMCA.Visible = false;
-            tr01_DOLS.Visible = false;
+            tadHeaders.FillByID(tblHeaders, Header_ID: prow.HeaderType);
+            foreach (dsWeb.HeadersRow hrow in tblHeaders)
+            {
+                Load_HeaderRow(hrow: hrow);
+            }
             pnl99_Footer.Visible = true;
             pnl02_Page.Visible = true;
             pnl02A_Prompt.Visible = true;
             lbl02_Prompt.Text = prow.DisplayHTML;
-            if (prow.IsYesPage_IDNull())
+            if (prow.IsYesPage_IDNull() || prow.YesPage_ID.Equals(""))
             {
                 tr02_Yes.Visible = false;
                 img02_Yes.ToolTip = "Home";
@@ -158,9 +115,8 @@ namespace HSABMCAWeb
             {
                 tr02_Yes.Visible = true;
                 img02_Yes.ToolTip = prow.YesPage_ID;
-
             }
-            if (prow.IsNoPage_IDNull())
+            if (prow.IsNoPage_IDNull() || prow.NoPage_ID.Equals(""))
             {
                 tr02_No.Visible = false;
                 img02_No.ToolTip = "Home";
@@ -170,8 +126,9 @@ namespace HSABMCAWeb
                 tr02_No.Visible = true;
                 img02_No.ToolTip = prow.NoPage_ID;
             }
-            pnl02A_Prompt.Visible = tr02_Yes.Visible || tr02_No.Visible;
-            if (prow.IsBackPage_IDNull())
+            lnk02_Yes.ToolTip = img02_Yes.ToolTip;
+            lnk02_No.ToolTip = img02_No.ToolTip; pnl02A_Prompt.Visible = tr02_Yes.Visible || tr02_No.Visible;
+            if (prow.IsBackPage_IDNull() || prow.BackPage_ID.Equals(""))
             {
                 img99_Back.Visible = false;
                 img99_Back.ToolTip = "Home";
@@ -181,7 +138,7 @@ namespace HSABMCAWeb
                 img99_Back.Visible = true;
                 img99_Back.ToolTip = prow.BackPage_ID;
             }
-            if (prow.IsNextPage_IDNull())
+            if (prow.IsNextPage_IDNull() || prow.NextPage_ID.Equals(""))
             {
                 img99_Next.Visible = false;
                 img99_Next.ToolTip = "Home";
@@ -201,18 +158,56 @@ namespace HSABMCAWeb
         }
 
         protected void Load_Home()
-        { 
-            tr01_MCD.Visible = true;
-            tr01_BID.Visible = true;
-            tr01_IMCA.Visible = true;
-            tr01_DOLS.Visible = true;
+        {
+            tadHeaders.Fill(tblHeaders);
+            tbl01_Header2.Rows.Clear();
+           
+            foreach (dsWeb.HeadersRow hrow in tblHeaders)
+            {
+                Load_HeaderRow(hrow: hrow);
+            }
             pnl99_Footer.Visible = false;
             img99_Next.Visible = false;
             pnl02_Page.Visible = false;
 
         }
 
-        protected void img99_Next_Click(object sender, ImageClickEventArgs e)
+
+        protected void Load_HeaderRow(dsWeb.HeadersRow hrow)
+        {
+            Button hbtn1 = new Button();
+            hbtn1.Text = hrow.Header_Title;
+            hbtn1.CssClass = "btn btn-info";
+            hbtn1.Font.Size = 16;
+            hbtn1.BackColor = System.Drawing.Color.FromArgb(hrow.Background_Color);
+            hbtn1.ToolTip = hrow.Start_Page;
+            hbtn1.Width = 500;
+            hbtn1.Height = 42;
+            hbtn1.OnClientClick = "__doPostBack('btnHeaderClick', '" + hrow.Start_Page + "')";
+            TableCell tcell1 = new TableCell();
+            tcell1.Controls.Add(hbtn1);
+
+            Button hbtn2 = new Button();
+            hbtn2.Text = "info " + hrow.Header_ID;
+            hbtn2.Font.Italic = true;
+            hbtn2.Font.Size = 8;
+            hbtn2.CssClass = "btn btn-info";
+            hbtn2.Height = 42;
+            hbtn2.ToolTip = hrow.Info_Page;
+            hbtn2.Width = 84;
+            hbtn2.OnClientClick = "__doPostBack('btnHeaderClick', '" + hrow.Info_Page + "')";
+
+            TableCell tcell2 = new TableCell();
+            tcell2.Controls.Add(hbtn2);
+
+            TableRow trow = new TableRow();
+            trow.Cells.Add(tcell1);
+            trow.Cells.Add(tcell2);
+
+            trow.ToolTip = hrow.Header_ID;
+            tbl01_Header2.Rows.Add(trow);
+        }
+            protected void img99_Next_Click(object sender, ImageClickEventArgs e)
         {
             Find_Page(page_id: img99_Next.ToolTip);
         }

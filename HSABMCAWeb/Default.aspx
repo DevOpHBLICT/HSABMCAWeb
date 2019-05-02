@@ -6,7 +6,7 @@
     <div >
         <h2>
             <asp:Table runat="server" ID="tbl01_Header2"></asp:Table>
-    </h2>
+</h2>
     </div>
     <asp:Panel runat="server" ID="pnl02_Page">
         <h2>

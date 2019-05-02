@@ -18,11 +18,6 @@
     <link rel="stylesheet" href="Content/bootstrap.min.css">
     <script src="Scripts/jquery-3.3.1.min.js"></script>
     <script src="Scripts/bootstrap.min.js"></script>
-    <style type="text/css">
-        .auto-style1 {
-            width: 311px;
-        }
-    </style>
 </head>
 <body>
     <form runat="server">
@@ -55,15 +50,14 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-              
-                    <table class="auto-style1">
-                        <tr><td>&nbsp;</td></tr>
-                        <tr>
-                        <td><a runat="server" href="~/">Home</a></td>
-                        <td><a runat="server" href="~/EditPage">Edit</a></td>
-                        <td><a runat="server" href="~/About">About</a></td>
-                        <td><a runat="server" href="~/Contact">Contact</a></td>
-                        </tr></table>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a runat="server" href="~/">Home</a></li>
+                        <li><a runat="server" href="~/EditPage">Edit</a></li>
+                        <li><a runat="server" href="~/About">About</a></li>
+                        <li><a runat="server" href="~/Contact">Contact</a></li>
+                    </ul>
                 </div>
             </div>
         </div>

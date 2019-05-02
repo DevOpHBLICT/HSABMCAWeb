@@ -85,6 +85,15 @@ namespace HSABMCAWeb {
         protected global::System.Web.UI.WebControls.Panel pnl02_Select;
         
         /// <summary>
+        /// ddl02_Page control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList ddl02_Page;
+        
+        /// <summary>
         /// btn02_New control.
         /// </summary>
         /// <remarks>
@@ -101,24 +110,6 @@ namespace HSABMCAWeb {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.SqlDataSource sql02_Pages;
-        
-        /// <summary>
-        /// dg02_Pages control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView dg02_Pages;
-        
-        /// <summary>
-        /// sql02_dgPages control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource sql02_dgPages;
         
         /// <summary>
         /// pnl03_HTML control.

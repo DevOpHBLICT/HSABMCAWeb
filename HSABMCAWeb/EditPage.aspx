@@ -17,23 +17,36 @@
     <table><tr><td>&nbsp;</td><td>&nbsp;</td></tr>
         <tr><td>Editor Login</td><td>&nbsp;&nbsp;- please enter</td></tr>
         <tr><td>UserName</td><td>
-        <asp:TextBox ID="txt01_User" runat="server"></asp:TextBox>
+        <asp:TextBox ID="txt01_User" runat="server" Text="aaaa"></asp:TextBox>
     </td></tr>
         <tr><td>Password</td><td>
-        <asp:TextBox ID="txt01_Password" runat="server"></asp:TextBox>
+        <asp:TextBox ID="txt01_Password" runat="server" TextMode="Password"></asp:TextBox>
             </td><td><asp:Button ID="btn01_Login" runat="server" Text="Login" OnClick="btn01_Login_Click" />
     </td></tr>
     </table>
 </asp:Panel>
 <asp:Panel runat="server" ID="pnl02_Select">
     <br />
-    Select Page to Edit &nbsp;
-    <asp:DropDownList ID="ddl02_Page" runat="server" AutoPostBack="True" DataSourceID="sql02_Pages" DataTextField="Page_ID" DataValueField="Page_ID" OnSelectedIndexChanged="ddl02_Page_SelectedIndexChanged"></asp:DropDownList>
-    &nbsp;Or click for <asp:Button ID="btn02_New" runat="server" Text="New Page" OnClick="btn02_New_Click" />
+    Select Page to Edit&nbsp;Or click for <asp:Button ID="btn02_New" runat="server" Text="New Page" OnClick="btn02_New_Click" />
     <asp:SqlDataSource ID="sql02_Pages" runat="server" ConnectionString="<%$ ConnectionStrings:HSABMCAWebDBConnectionString %>" SelectCommand="SELECT Page_ID FROM Pages
 union
 Select '' as Page_ID
  ORDER BY Page_ID"></asp:SqlDataSource>
+    <asp:GridView ID="dg02_Pages" runat="server" DataSourceID="sql02_dgPages" AllowPaging="True" AutoGenerateColumns="False" DataKeyNames="Page_ID" OnSelectedIndexChanged="dg02_Pages_SelectedIndexChanged">
+        <Columns>
+            <asp:CommandField ShowSelectButton="True" ButtonType="Button" />
+            <asp:BoundField DataField="Page_ID" HeaderText="Page_ID" ReadOnly="True" SortExpression="Page_ID" />
+            <asp:BoundField DataField="YesPage_ID" HeaderText="YesPage_ID" SortExpression="YesPage_ID" />
+            <asp:BoundField DataField="NoPage_ID" HeaderText="NoPage_ID" SortExpression="NoPage_ID" />
+            <asp:BoundField DataField="NextPage_ID" HeaderText="NextPage_ID" SortExpression="NextPage_ID" />
+            <asp:BoundField DataField="BackPage_ID" HeaderText="BackPage_ID" SortExpression="BackPage_ID" />
+            <asp:BoundField DataField="HeaderType" HeaderText="HeaderType" SortExpression="HeaderType" />
+            <asp:BoundField DataField="DisplayHTML" HeaderText="DisplayHTML" SortExpression="DisplayHTML">
+            <ItemStyle Width="400px" Wrap="False" />
+            </asp:BoundField>
+        </Columns>
+    </asp:GridView>
+    <asp:SqlDataSource ID="sql02_dgPages" runat="server" ConnectionString="<%$ ConnectionStrings:HSABMCAWebDBConnectionString %>" SelectCommand="SELECT Page_ID, YesPage_ID, NoPage_ID, NextPage_ID, BackPage_ID, HeaderType, Substring(DisplayHTML,1,60)+'...' as DisplayHTML FROM Pages ORDER BY Page_ID"></asp:SqlDataSource>
     </asp:Panel>
     <asp:Panel runat="server" ID="pnl03_HTML">
      <br />

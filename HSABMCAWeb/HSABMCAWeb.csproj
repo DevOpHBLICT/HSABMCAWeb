@@ -157,6 +157,7 @@
       <DependentUpon>dsWeb.xsd</DependentUpon>
     </Content>
     <None Include="packages.config" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Global.asax" />
     <Content Include="Images\back-120x120.png" />
